@@ -15,7 +15,7 @@ public class MainController {
     public String home(Model model, HttpServletRequest req) {//Buradaki model inversition of control
         model.addAttribute("sayi",12);
         model.addAttribute("tempattr","/");
-        System.out.println(req.getRemoteAddr());
+        //System.out.println(req.getRemoteAddr());
         return "index";
     }
     @RequestMapping(value = "/metin", method = RequestMethod.GET)
